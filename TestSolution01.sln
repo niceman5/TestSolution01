@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleEventHandler", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFStreamTest01", "WFStreamTest01\WFStreamTest01.csproj", "{55B717B0-C673-4966-8714-309ED4D37A36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialize", "XMLSerialize\XMLSerialize.csproj", "{D5FDD843-81F9-4040-AFA3-02651F2B63C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClicker", "SimpleClicker\SimpleClicker.csproj", "{FB67A615-D63E-4D14-B82A-C75D357F9A98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{55B717B0-C673-4966-8714-309ED4D37A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B717B0-C673-4966-8714-309ED4D37A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B717B0-C673-4966-8714-309ED4D37A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FDD843-81F9-4040-AFA3-02651F2B63C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FDD843-81F9-4040-AFA3-02651F2B63C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FDD843-81F9-4040-AFA3-02651F2B63C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FDD843-81F9-4040-AFA3-02651F2B63C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB67A615-D63E-4D14-B82A-C75D357F9A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB67A615-D63E-4D14-B82A-C75D357F9A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB67A615-D63E-4D14-B82A-C75D357F9A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB67A615-D63E-4D14-B82A-C75D357F9A98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

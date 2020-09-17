@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <seq>1</seq>
+  <Name>홍길동</Name>
+  <CompanyName>가나다라</CompanyName>
+  <Sex>true</Sex>
+</Customer>
