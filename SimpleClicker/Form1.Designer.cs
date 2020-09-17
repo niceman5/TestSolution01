@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTickPoint = new System.Windows.Forms.Label();
             this.lblTotla = new System.Windows.Forms.Label();
+            this.lblTickPoint = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn1Add = new System.Windows.Forms.Button();
             this.btn3Add = new System.Windows.Forms.Button();
             this.btn50Add = new System.Windows.Forms.Button();
@@ -56,14 +56,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "점수";
             // 
-            // label1
+            // lblTotla
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tick Point :";
+            this.lblTotla.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblTotla.Location = new System.Drawing.Point(16, 58);
+            this.lblTotla.Name = "lblTotla";
+            this.lblTotla.Size = new System.Drawing.Size(301, 63);
+            this.lblTotla.TabIndex = 2;
+            this.lblTotla.Text = "1111";
+            this.lblTotla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTickPoint
             // 
@@ -74,15 +75,14 @@
             this.lblTickPoint.TabIndex = 1;
             this.lblTickPoint.Text = "0";
             // 
-            // lblTotla
+            // label1
             // 
-            this.lblTotla.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblTotla.Location = new System.Drawing.Point(16, 58);
-            this.lblTotla.Name = "lblTotla";
-            this.lblTotla.Size = new System.Drawing.Size(301, 63);
-            this.lblTotla.TabIndex = 2;
-            this.lblTotla.Text = "1111";
-            this.lblTotla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tick Point :";
             // 
             // btn1Add
             // 
@@ -125,6 +125,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

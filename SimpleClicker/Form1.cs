@@ -51,31 +51,28 @@ namespace SimpleClicker
                     if (iTotal > 100)
                     {
                         iTotal -= 100;
-
-                        i1Level++;
-                        i1Add = 1 * i1Level;
-                    }                    
+                    }
+                    i1Level++;
+                    i1Add = 1 * i1Level;
 
                     break;
                 case "btn3Add":
                     if (iTotal > 300)
                     {
                         iTotal -= 300;
-
-                        i3Level++;
-                        i3Add = 1 * i3Level;
                     }
-                    
+                    i3Level++;
+                    i3Add = 1 * i3Level;
+
                     break;
                 case "btn50Add":
                     if (iTotal > 500)
                     {
-                        iTotal -= 500;
-
-                        i50Level++;
-                        i50Add = 1 * i50Level;
+                        iTotal -= 500;                        
                     }
-                    
+
+                    i50Level++;
+                    i50Add = 1 * i50Level;
                     break;
                 default:
                     break;
