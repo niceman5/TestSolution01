@@ -7,6 +7,9 @@ using System.Xml;
 
 namespace WFStreamTest01
 {
+    /// <summary>
+    /// XML관련 파일쓰기 파일 읽기.....
+    /// </summary>
     class CXMLControl
     {
         public static string _TEXT_DATA = "TEXT_DATA";
