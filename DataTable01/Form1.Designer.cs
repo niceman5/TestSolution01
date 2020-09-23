@@ -41,8 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgViewInfo = new System.Windows.Forms.DataGridView();
-            this.btnViewDataDelete = new System.Windows.Forms.Button();
-            this.cboViewClass = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgViewInfo)).BeginInit();
@@ -50,6 +48,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnAppend);
             this.groupBox1.Controls.Add(this.txtRef);
             this.groupBox1.Controls.Add(this.rdoSexFemale);
@@ -59,23 +58,21 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(26, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(323, 179);
+            this.groupBox1.Size = new System.Drawing.Size(344, 179);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "등록하기";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnAppend
             // 
-            this.btnAppend.Location = new System.Drawing.Point(221, 141);
-            this.btnAppend.Name = "btnAppend";
-            this.btnAppend.Size = new System.Drawing.Size(75, 23);
-            this.btnAppend.TabIndex = 9;
-            this.btnAppend.Text = "등록";
-            this.btnAppend.UseVisualStyleBackColor = true;
+            this.label1.Location = new System.Drawing.Point(6, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "반 :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtRef
             // 
@@ -130,13 +127,21 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(6, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "특기 :";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.txtName.Location = new System.Drawing.Point(96, 62);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(71, 20);
+            this.txtName.TabIndex = 5;
+            // 
+            // rdoSexMan
+            // 
+            this.rdoSexMan.AutoSize = true;
+            this.rdoSexMan.Location = new System.Drawing.Point(96, 89);
+            this.rdoSexMan.Name = "rdoSexMan";
+            this.rdoSexMan.Size = new System.Drawing.Size(53, 17);
+            this.rdoSexMan.TabIndex = 6;
+            this.rdoSexMan.TabStop = true;
+            this.rdoSexMan.Text = "남자";
+            this.rdoSexMan.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -158,12 +163,12 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(6, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "반 :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAppend.Location = new System.Drawing.Point(221, 141);
+            this.btnAppend.Name = "btnAppend";
+            this.btnAppend.Size = new System.Drawing.Size(75, 23);
+            this.btnAppend.TabIndex = 9;
+            this.btnAppend.Text = "등록";
+            this.btnAppend.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -176,24 +181,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "내용확인";
-            // 
-            // dgViewInfo
-            // 
-            this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgViewInfo.Location = new System.Drawing.Point(17, 52);
-            this.dgViewInfo.Name = "dgViewInfo";
-            this.dgViewInfo.RowTemplate.Height = 23;
-            this.dgViewInfo.Size = new System.Drawing.Size(719, 192);
-            this.dgViewInfo.TabIndex = 11;
-            // 
-            // btnViewDataDelete
-            // 
-            this.btnViewDataDelete.Location = new System.Drawing.Point(661, 23);
-            this.btnViewDataDelete.Name = "btnViewDataDelete";
-            this.btnViewDataDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnViewDataDelete.TabIndex = 10;
-            this.btnViewDataDelete.Text = "삭제";
-            this.btnViewDataDelete.UseVisualStyleBackColor = true;
             // 
             // cboViewClass
             // 
@@ -209,15 +196,35 @@
             this.cboViewClass.TabIndex = 0;
             this.cboViewClass.Text = "1반";
             // 
+            // btnViewDataDelete
+            // 
+            this.btnViewDataDelete.Location = new System.Drawing.Point(661, 23);
+            this.btnViewDataDelete.Name = "btnViewDataDelete";
+            this.btnViewDataDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnViewDataDelete.TabIndex = 10;
+            this.btnViewDataDelete.Text = "삭제";
+            this.btnViewDataDelete.UseVisualStyleBackColor = true;
+            // 
+            // dgViewInfo
+            // 
+            this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgViewInfo.Location = new System.Drawing.Point(17, 52);
+            this.dgViewInfo.Name = "dgViewInfo";
+            this.dgViewInfo.RowTemplate.Height = 23;
+            this.dgViewInfo.Size = new System.Drawing.Size(719, 192);
+            this.dgViewInfo.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 488);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -244,6 +251,7 @@
         private System.Windows.Forms.ComboBox cboViewClass;
         private System.Windows.Forms.Button btnViewDataDelete;
         private System.Windows.Forms.DataGridView dgViewInfo;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
