@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdoDow1 = new System.Windows.Forms.RadioButton();
             this.rdoDow2 = new System.Windows.Forms.RadioButton();
+            this.rdoDow1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdoEdge2 = new System.Windows.Forms.RadioButton();
             this.rdoEdge1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.chkTopping1 = new System.Windows.Forms.CheckBox();
-            this.chkTopping2 = new System.Windows.Forms.CheckBox();
-            this.chkTopping3 = new System.Windows.Forms.CheckBox();
-            this.numEa = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.numEa = new System.Windows.Forms.NumericUpDown();
+            this.chkTopping3 = new System.Windows.Forms.CheckBox();
+            this.chkTopping2 = new System.Windows.Forms.CheckBox();
+            this.chkTopping1 = new System.Windows.Forms.CheckBox();
             this.btnOrder = new System.Windows.Forms.Button();
             this.lstOrder = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
@@ -59,6 +59,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "도우";
             // 
+            // rdoDow2
+            // 
+            this.rdoDow2.AutoSize = true;
+            this.rdoDow2.Location = new System.Drawing.Point(214, 19);
+            this.rdoDow2.Name = "rdoDow2";
+            this.rdoDow2.Size = new System.Drawing.Size(109, 17);
+            this.rdoDow2.TabIndex = 1;
+            this.rdoDow2.TabStop = true;
+            this.rdoDow2.Text = "씬(11,000원)";
+            this.rdoDow2.UseVisualStyleBackColor = true;
+            // 
             // rdoDow1
             // 
             this.rdoDow1.AutoSize = true;
@@ -70,17 +81,6 @@
             this.rdoDow1.TabStop = true;
             this.rdoDow1.Text = "오리지널(10,000원)";
             this.rdoDow1.UseVisualStyleBackColor = true;
-            // 
-            // rdoDow2
-            // 
-            this.rdoDow2.AutoSize = true;
-            this.rdoDow2.Location = new System.Drawing.Point(214, 19);
-            this.rdoDow2.Name = "rdoDow2";
-            this.rdoDow2.Size = new System.Drawing.Size(109, 17);
-            this.rdoDow2.TabIndex = 1;
-            this.rdoDow2.TabStop = true;
-            this.rdoDow2.Text = "씬(11,000원)";
-            this.rdoDow2.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -130,25 +130,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "토핑";
             // 
-            // chkTopping1
+            // label1
             // 
-            this.chkTopping1.AutoSize = true;
-            this.chkTopping1.Location = new System.Drawing.Point(23, 30);
-            this.chkTopping1.Name = "chkTopping1";
-            this.chkTopping1.Size = new System.Drawing.Size(145, 17);
-            this.chkTopping1.TabIndex = 1;
-            this.chkTopping1.Text = "소세지(1개 500원)";
-            this.chkTopping1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(331, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "(개)";
             // 
-            // chkTopping2
+            // numEa
             // 
-            this.chkTopping2.AutoSize = true;
-            this.chkTopping2.Location = new System.Drawing.Point(23, 53);
-            this.chkTopping2.Name = "chkTopping2";
-            this.chkTopping2.Size = new System.Drawing.Size(131, 17);
-            this.chkTopping2.TabIndex = 2;
-            this.chkTopping2.Text = "감자(1개 200원)";
-            this.chkTopping2.UseVisualStyleBackColor = true;
+            this.numEa.Location = new System.Drawing.Point(253, 73);
+            this.numEa.Name = "numEa";
+            this.numEa.Size = new System.Drawing.Size(70, 20);
+            this.numEa.TabIndex = 4;
             // 
             // chkTopping3
             // 
@@ -160,21 +156,25 @@
             this.chkTopping3.Text = "치즈(1개 300원)";
             this.chkTopping3.UseVisualStyleBackColor = true;
             // 
-            // numEa
+            // chkTopping2
             // 
-            this.numEa.Location = new System.Drawing.Point(253, 73);
-            this.numEa.Name = "numEa";
-            this.numEa.Size = new System.Drawing.Size(70, 20);
-            this.numEa.TabIndex = 4;
+            this.chkTopping2.AutoSize = true;
+            this.chkTopping2.Location = new System.Drawing.Point(23, 53);
+            this.chkTopping2.Name = "chkTopping2";
+            this.chkTopping2.Size = new System.Drawing.Size(131, 17);
+            this.chkTopping2.TabIndex = 2;
+            this.chkTopping2.Text = "감자(1개 200원)";
+            this.chkTopping2.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // chkTopping1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(331, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "(개)";
+            this.chkTopping1.AutoSize = true;
+            this.chkTopping1.Location = new System.Drawing.Point(23, 30);
+            this.chkTopping1.Name = "chkTopping1";
+            this.chkTopping1.Size = new System.Drawing.Size(145, 17);
+            this.chkTopping1.TabIndex = 1;
+            this.chkTopping1.Text = "소세지(1개 500원)";
+            this.chkTopping1.UseVisualStyleBackColor = true;
             // 
             // btnOrder
             // 
@@ -206,6 +206,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

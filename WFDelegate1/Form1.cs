@@ -19,13 +19,9 @@ namespace WFDelegate1
         public delegate T delFunc<T>(T i);
         public delegate object delFunc(object i);       //var object
 
+        int _iTotlaPrice = 0;        
 
-
-
-
-        int _iTotlaPrice = 0;
-
-
+        frmPizza frmPizza;
 
 
         public Form1()
@@ -39,7 +35,7 @@ namespace WFDelegate1
             delFuncDow_Edge delEdge = new delFuncDow_Edge(fEdge);
             delFuncTopping delTopping = null;
 
-
+            Dictionary<string, int> dpOrder = new Dictionary<string, int>();       // pizza 주문을 담을 그릇
 
 
             int iOrder = 0;
@@ -48,10 +44,12 @@ namespace WFDelegate1
             if (rdoDow1.Checked)
             {
                 iOrder = 1;
+                dpOrder.Add("오리지널", 1);
             }
             else if (rdoDow2.Checked)
             {
                 iOrder = 2;
+                dpOrder.Add("씬", 1);
             }
             // _iTotlaPrice = delDow(iOrder);
 
@@ -59,10 +57,12 @@ namespace WFDelegate1
             if (rdoEdge1.Checked)
             {
                 iEdgeOrder = 1;
+                dpOrder.Add("리치골드", 1);
             }
             else if (rdoEdge2.Checked)
             {
                 iEdgeOrder = 2;
+                dpOrder.Add("치즈크러스트", 1);
             }
             // _iTotlaPrice = delEdge(iEdgeOrder);
 
@@ -74,14 +74,17 @@ namespace WFDelegate1
             {
                 // delTopping = new delFuncTopping(fTooping1);
                 delTopping += fTooping1;
+                dpOrder.Add("소세지", (int)numEa.Value);
             }
             if (chkTopping2.Checked)
             {
                 delTopping += fTooping2;
+                dpOrder.Add("감자", (int)numEa.Value);
             }
             if (chkTopping3.Checked)
             {
                 delTopping += fTooping3;
+                dpOrder.Add("치즈", (int)numEa.Value);
             }
 
 
@@ -90,7 +93,12 @@ namespace WFDelegate1
 
             listBoxOrderAdd("--------------------------------------------------");
             listBoxOrderAdd(string.Format("전체 주문 가격은 {0} 원 입니다.", _iTotlaPrice));
+
+
+            frmLoading(dpOrder);
         }
+
+ 
 
         #region
         /// <summary>
@@ -197,6 +205,42 @@ namespace WFDelegate1
         private void listBoxOrderAdd(string strOrder)
         {
             lstOrder.Items.Add(strOrder);
+        }
+
+        #endregion
+
+        #region
+
+        private void frmLoading(Dictionary<string, int> dpOrder)
+        {
+            // frmPizza frmPizza = new frmPizza();
+
+            // form 계속 새로 안뜨게 이미 있는지 검사하고 있으면 해제 시키고 새로 생성
+            if (frmPizza != null)
+            {
+                frmPizza.Dispose();
+                frmPizza = null;
+            }
+
+            frmPizza = new frmPizza();
+            // event추가
+            frmPizza.eventdelPizzaComplete += FrmPizza_eventdelPizzaComplete;
+            frmPizza.Show();
+            frmPizza.fPizzaCheck(dpOrder);     // 서브폼의 함수 실행
+
+        }
+
+        private int FrmPizza_eventdelPizzaComplete(string strResult, int iTime)
+        {
+
+            listBoxOrderAdd("--------------------------------------------------");
+            listBoxOrderAdd(string.Format("{0} / 걸린시간 {1}", strResult, iTime));
+
+            if (iTime > 40000)
+            {
+                return -1;
+            }
+            return 0;
         }
 
         #endregion
