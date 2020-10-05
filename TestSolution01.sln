@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFDelegate1", "WFDelegate1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortApp1", "SortApp1\SortApp1.csproj", "{9DC2BC4E-FED0-4047-93AD-042639FFD29C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFException01", "WFException01\WFException01.csproj", "{5B07F882-CF1E-45F5-9918-F1449323B34E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{9DC2BC4E-FED0-4047-93AD-042639FFD29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC2BC4E-FED0-4047-93AD-042639FFD29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC2BC4E-FED0-4047-93AD-042639FFD29C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
