@@ -101,20 +101,33 @@ namespace WFException01
         private void lstColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             //선택값 변경시...
-            oSelectColor = dColor[(lstColor.SelectedItem.ToString()];
+            oSelectColor = dColor[lstColor.SelectedItem.ToString()];
             pColor.BackColor = oSelectColor;
         }
 
-        private void panel2_Click(object sender, EventArgs e)
+        private void Panel_Click(object sender, EventArgs e)
         {
             try
             {
+                // 형변환하는 방법은 두가지 임///
+                // Panel oPanel = (Panel)sender;
+                if (sender is Panel)
+                {
+                    Panel oPanel = sender as Panel;
+                    oPanel.BackColor = oSelectColor;
+                }
+                else if (sender is Button)
+                {
+                    // sender가 버튼인지 체크
+                    MessageBox.Show("버튼이 클릭됨");
+                }
 
+                
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.ToString());
             }
         }
     }

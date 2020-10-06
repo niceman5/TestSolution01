@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblColor = new System.Windows.Forms.Label();
+            this.tbarAlpha = new System.Windows.Forms.TrackBar();
+            this.pColor = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnColorSave = new System.Windows.Forms.Button();
             this.btnColorDelete = new System.Windows.Forms.Button();
             this.lstColor = new System.Windows.Forms.ListBox();
-            this.pColor = new System.Windows.Forms.Panel();
-            this.tbarAlpha = new System.Windows.Forms.TrackBar();
-            this.lblColor = new System.Windows.Forms.Label();
             this.pBack = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarAlpha)).BeginInit();
             this.pBack.SuspendLayout();
@@ -65,32 +65,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Color Select";
             // 
-            // label1
+            // lblColor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Color :";
+            this.lblColor.AutoSize = true;
+            this.lblColor.Location = new System.Drawing.Point(86, 121);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(15, 14);
+            this.lblColor.TabIndex = 5;
+            this.lblColor.Text = "-";
             // 
-            // label2
+            // tbarAlpha
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Alpha :";
+            this.tbarAlpha.Location = new System.Drawing.Point(75, 69);
+            this.tbarAlpha.Maximum = 255;
+            this.tbarAlpha.Name = "tbarAlpha";
+            this.tbarAlpha.Size = new System.Drawing.Size(104, 45);
+            this.tbarAlpha.TabIndex = 4;
+            this.tbarAlpha.Value = 255;
+            this.tbarAlpha.Scroll += new System.EventHandler(this.tbarAlpha_Scroll);
+            // 
+            // pColor
+            // 
+            this.pColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pColor.Location = new System.Drawing.Point(89, 35);
+            this.pColor.Name = "pColor";
+            this.pColor.Size = new System.Drawing.Size(20, 20);
+            this.pColor.TabIndex = 3;
+            this.pColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pColor_MouseClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(9, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.Size = new System.Drawing.Size(56, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = " Text : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 14);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Alpha :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Color :";
             // 
             // btnColorSave
             // 
@@ -115,40 +143,12 @@
             // lstColor
             // 
             this.lstColor.FormattingEnabled = true;
-            this.lstColor.ItemHeight = 17;
+            this.lstColor.ItemHeight = 14;
             this.lstColor.Location = new System.Drawing.Point(12, 267);
             this.lstColor.Name = "lstColor";
-            this.lstColor.Size = new System.Drawing.Size(370, 191);
+            this.lstColor.Size = new System.Drawing.Size(370, 186);
             this.lstColor.TabIndex = 3;
             this.lstColor.SelectedIndexChanged += new System.EventHandler(this.lstColor_SelectedIndexChanged);
-            // 
-            // pColor
-            // 
-            this.pColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pColor.Location = new System.Drawing.Point(89, 35);
-            this.pColor.Name = "pColor";
-            this.pColor.Size = new System.Drawing.Size(20, 20);
-            this.pColor.TabIndex = 3;
-            this.pColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pColor_MouseClick);
-            // 
-            // tbarAlpha
-            // 
-            this.tbarAlpha.Location = new System.Drawing.Point(75, 69);
-            this.tbarAlpha.Maximum = 255;
-            this.tbarAlpha.Name = "tbarAlpha";
-            this.tbarAlpha.Size = new System.Drawing.Size(104, 56);
-            this.tbarAlpha.TabIndex = 4;
-            this.tbarAlpha.Value = 255;
-            this.tbarAlpha.Scroll += new System.EventHandler(this.tbarAlpha_Scroll);
-            // 
-            // lblColor
-            // 
-            this.lblColor.AutoSize = true;
-            this.lblColor.Location = new System.Drawing.Point(86, 121);
-            this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(16, 17);
-            this.lblColor.TabIndex = 5;
-            this.lblColor.Text = "-";
             // 
             // pBack
             // 
@@ -163,30 +163,14 @@
             this.pBack.Size = new System.Drawing.Size(460, 446);
             this.pBack.TabIndex = 4;
             // 
-            // panel2
+            // panel5
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(64, 68);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 110);
-            this.panel2.TabIndex = 0;
-            this.panel2.Click += new System.EventHandler(this.panel2_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(234, 201);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(70, 40);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(49, 201);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 125);
-            this.panel3.TabIndex = 2;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(86, 360);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(286, 40);
+            this.panel5.TabIndex = 3;
+            this.panel5.Click += new System.EventHandler(this.Panel_Click);
             // 
             // panel4
             // 
@@ -195,18 +179,38 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(70, 40);
             this.panel4.TabIndex = 2;
+            this.panel4.Click += new System.EventHandler(this.Panel_Click);
             // 
-            // panel5
+            // panel1
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(86, 360);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(286, 40);
-            this.panel5.TabIndex = 3;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(234, 201);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(70, 40);
+            this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.Panel_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(49, 201);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(150, 125);
+            this.panel3.TabIndex = 2;
+            this.panel3.Click += new System.EventHandler(this.Panel_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(64, 68);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(265, 110);
+            this.panel2.TabIndex = 0;
+            this.panel2.Click += new System.EventHandler(this.Panel_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 486);
             this.Controls.Add(this.pBack);

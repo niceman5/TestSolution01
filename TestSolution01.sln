@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortApp1", "SortApp1\SortAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFException01", "WFException01\WFException01.csproj", "{5B07F882-CF1E-45F5-9918-F1449323B34E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFUserControl", "WFUserControl\WFUserControl.csproj", "{FABAD6F7-160D-46D8-8782-23FD235C2DF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B07F882-CF1E-45F5-9918-F1449323B34E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABAD6F7-160D-46D8-8782-23FD235C2DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABAD6F7-160D-46D8-8782-23FD235C2DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABAD6F7-160D-46D8-8782-23FD235C2DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABAD6F7-160D-46D8-8782-23FD235C2DF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
