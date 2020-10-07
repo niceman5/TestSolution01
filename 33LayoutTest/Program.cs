@@ -16,7 +16,12 @@ namespace _33LayoutTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            
+            // Table Layout써서 구분
+            // Application.Run(new Form1());
+
+            // 
+            Application.Run(new Form2());
         }
     }
 }
