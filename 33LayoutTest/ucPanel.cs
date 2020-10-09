@@ -12,6 +12,8 @@ namespace _33LayoutTest
 {
     public partial class ucPanel : UserControl
     {
+        public event EventHandler eLableDoubleClikcHandler;
+
         public ucPanel()
         {
             InitializeComponent();
@@ -20,6 +22,12 @@ namespace _33LayoutTest
         private void PanelSizeChange(object sender, EventArgs e)
         {
             lblPanel.Text = string.Format("({0},{1})", lblPanel.Width, lblPanel.Height);
+        }
+
+        private void lblPanel_DoubleClick(object sender, EventArgs e)
+        {
+            // ucPanel자체를 인수로 넘김
+            eLableDoubleClikcHandler(this, e);
         }
     }
 }

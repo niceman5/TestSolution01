@@ -40,6 +40,7 @@
             this.lblPanel.TabIndex = 0;
             this.lblPanel.Text = "(0,0)";
             this.lblPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPanel.DoubleClick += new System.EventHandler(this.lblPanel_DoubleClick);
             // 
             // ucPanel
             // 

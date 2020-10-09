@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _33LayoutTest
+namespace _36LinkedListSortedList
 {
     static class Program
     {
@@ -16,15 +16,7 @@ namespace _33LayoutTest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            // Table Layout써서 구분
-            // Application.Run(new Form1());
-
-            // 여라가지 Layout처리
-            // Application.Run(new Form2());
-
-            //Layout간 이벤트처리까지...
-            Application.Run(new Form3());
+            Application.Run(new Form1());
         }
     }
 }
