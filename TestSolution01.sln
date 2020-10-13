@@ -41,7 +41,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38Lock", "38Lock\38Lock.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.MenuTest", "41.MenuTest\41.MenuTest.csproj", "{54066272-48C3-407D-A4C7-4004BC69DFB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.AlgorithmTest", "00.AlgorithmTest\00.AlgorithmTest.csproj", "{BDAF8573-803F-4F36-BD11-7F8FCA4BE6DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.AlgorithmTest", "00.AlgorithmTest\00.AlgorithmTest.csproj", "{BDAF8573-803F-4F36-BD11-7F8FCA4BE6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "49.WebCrawling01", "WebCrawling01\49.WebCrawling01.csproj", "{5466671E-E0B7-46C3-9261-E874CFDC04A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{BDAF8573-803F-4F36-BD11-7F8FCA4BE6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAF8573-803F-4F36-BD11-7F8FCA4BE6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAF8573-803F-4F36-BD11-7F8FCA4BE6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
