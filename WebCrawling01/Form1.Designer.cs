@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtPW = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.txtPW = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.picMain = new System.Windows.Forms.PictureBox();
-            this.btnPre = new System.Windows.Forms.Button();
-            this.txtGo = new System.Windows.Forms.TextBox();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.btnGo = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.btnGo = new System.Windows.Forms.Button();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.txtGo = new System.Windows.Forms.TextBox();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.picMain = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -68,15 +68,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "1. 특정 Site Login";
             // 
-            // label1
+            // btnLogin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(16, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID :";
+            this.btnLogin.Location = new System.Drawing.Point(198, 25);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 50);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // txtPW
+            // 
+            this.txtPW.Location = new System.Drawing.Point(57, 55);
+            this.txtPW.Name = "txtPW";
+            this.txtPW.PasswordChar = '*';
+            this.txtPW.Size = new System.Drawing.Size(135, 20);
+            this.txtPW.TabIndex = 3;
+            this.txtPW.Text = "gustnr35!";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(57, 28);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(135, 20);
+            this.txtID.TabIndex = 2;
+            this.txtID.Text = "niceman5_wow";
             // 
             // label2
             // 
@@ -88,29 +105,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "PW :";
             // 
-            // txtID
+            // label1
             // 
-            this.txtID.Location = new System.Drawing.Point(57, 28);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(135, 20);
-            this.txtID.TabIndex = 2;
-            // 
-            // txtPW
-            // 
-            this.txtPW.Location = new System.Drawing.Point(57, 55);
-            this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(135, 20);
-            this.txtPW.TabIndex = 3;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(198, 25);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 50);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(16, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID :";
             // 
             // groupBox2
             // 
@@ -126,15 +129,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "2.1. 이미지 검색";
             // 
-            // label3
+            // txtUrl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(11, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "검색어 :";
+            this.txtUrl.Location = new System.Drawing.Point(80, 58);
+            this.txtUrl.Multiline = true;
+            this.txtUrl.Name = "txtUrl";
+            this.txtUrl.Size = new System.Drawing.Size(230, 200);
+            this.txtUrl.TabIndex = 7;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(235, 28);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 22);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "조회";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(80, 28);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(132, 22);
+            this.txtSearch.TabIndex = 5;
             // 
             // label4
             // 
@@ -146,29 +164,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "URL :";
             // 
-            // txtSearch
+            // label3
             // 
-            this.txtSearch.Location = new System.Drawing.Point(80, 28);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(132, 22);
-            this.txtSearch.TabIndex = 5;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(235, 28);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 22);
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.Text = "조회";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // txtUrl
-            // 
-            this.txtUrl.Location = new System.Drawing.Point(80, 58);
-            this.txtUrl.Multiline = true;
-            this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(230, 200);
-            this.txtUrl.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(11, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "검색어 :";
             // 
             // groupBox3
             // 
@@ -185,31 +189,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "2.2 이미지 검색";
             // 
-            // picMain
+            // btnNext
             // 
-            this.picMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picMain.Location = new System.Drawing.Point(11, 21);
-            this.picMain.Name = "picMain";
-            this.picMain.Size = new System.Drawing.Size(447, 322);
-            this.picMain.TabIndex = 0;
-            this.picMain.TabStop = false;
+            this.btnNext.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnNext.Location = new System.Drawing.Point(295, 351);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(61, 22);
+            this.btnNext.TabIndex = 10;
+            this.btnNext.Text = ">";
+            this.btnNext.UseVisualStyleBackColor = true;
             // 
-            // btnPre
+            // btnGo
             // 
-            this.btnPre.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnPre.Location = new System.Drawing.Point(79, 351);
-            this.btnPre.Name = "btnPre";
-            this.btnPre.Size = new System.Drawing.Size(61, 22);
-            this.btnPre.TabIndex = 8;
-            this.btnPre.Text = "<";
-            this.btnPre.UseVisualStyleBackColor = true;
-            // 
-            // txtGo
-            // 
-            this.txtGo.Location = new System.Drawing.Point(146, 351);
-            this.txtGo.Name = "txtGo";
-            this.txtGo.Size = new System.Drawing.Size(28, 22);
-            this.txtGo.TabIndex = 8;
+            this.btnGo.Location = new System.Drawing.Point(214, 351);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(75, 22);
+            this.btnGo.TabIndex = 9;
+            this.btnGo.Text = "GO";
+            this.btnGo.UseVisualStyleBackColor = true;
             // 
             // lblTotal
             // 
@@ -221,24 +218,31 @@
             this.lblTotal.TabIndex = 8;
             this.lblTotal.Text = "/ 0";
             // 
-            // btnGo
+            // txtGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(214, 351);
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(75, 22);
-            this.btnGo.TabIndex = 9;
-            this.btnGo.Text = "GO";
-            this.btnGo.UseVisualStyleBackColor = true;
+            this.txtGo.Location = new System.Drawing.Point(146, 351);
+            this.txtGo.Name = "txtGo";
+            this.txtGo.Size = new System.Drawing.Size(28, 22);
+            this.txtGo.TabIndex = 8;
             // 
-            // btnNext
+            // btnPre
             // 
-            this.btnNext.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnNext.Location = new System.Drawing.Point(295, 351);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(61, 22);
-            this.btnNext.TabIndex = 10;
-            this.btnNext.Text = ">";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnPre.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnPre.Location = new System.Drawing.Point(79, 351);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(61, 22);
+            this.btnPre.TabIndex = 8;
+            this.btnPre.Text = "<";
+            this.btnPre.UseVisualStyleBackColor = true;
+            // 
+            // picMain
+            // 
+            this.picMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picMain.Location = new System.Drawing.Point(11, 21);
+            this.picMain.Name = "picMain";
+            this.picMain.Size = new System.Drawing.Size(447, 322);
+            this.picMain.TabIndex = 0;
+            this.picMain.TabStop = false;
             // 
             // Form1
             // 
@@ -250,6 +254,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

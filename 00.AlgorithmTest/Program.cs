@@ -24,7 +24,10 @@ namespace _00.AlgorithmTest
             //Quize_문자열다루기기본 q = new Quize_문자열다루기기본();
             //q.Answer();
 
-            Quize_소수찾기 q = new Quize_소수찾기();
+            //Quize_소수찾기 q = new Quize_소수찾기();
+            //q.Answer();
+
+            Quize_3진법뒤집기 q = new Quize_3진법뒤집기);
             q.Answer();
 
         }
