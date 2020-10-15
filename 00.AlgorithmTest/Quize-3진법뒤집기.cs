@@ -26,6 +26,10 @@ n (10진법)	n (3진법)	앞뒤 반전(3진법)	10진법으로 표현
 n (10진법)	n (3진법)	앞뒤 반전(3진법)	10진법으로 표현
 125	11122	22111	229
 따라서 229를 return 해야 합니다.
+
+
+
+
  * 
  * */
 
@@ -33,15 +37,35 @@ namespace _00.AlgorithmTest
 {
     class Quize_3진법뒤집기
     {
+        List<int> lst3 = new List<int>();
+
+        private void Num3(int n)
+        {
+            int i1 = 0;     //몫
+            int i2 = 0;     //나머지
+
+            while (i1 > 0)
+            {
+                i1 = n / 3; //몫
+                i2 = n % 3; //나머지
+            }
+        }
+
+
         private int solution(int n)
         {
             int answer = 0;
+            
+            Num3(n);
+
+
+
             return answer;
         }
 
         public void Answer()
         {
-            
+            Console.WriteLine(solution(45));            
         }
     }
 }

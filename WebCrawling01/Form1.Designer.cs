@@ -198,6 +198,7 @@
             this.btnNext.TabIndex = 10;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnGo
             // 
@@ -207,6 +208,7 @@
             this.btnGo.TabIndex = 9;
             this.btnGo.Text = "GO";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // lblTotal
             // 
@@ -234,6 +236,7 @@
             this.btnPre.TabIndex = 8;
             this.btnPre.Text = "<";
             this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
             // picMain
             // 

@@ -88,20 +88,26 @@ namespace WebCrawling01
                 }
             }
 
-            picMain.ImageLocation = lstSrc[4];
-            txtUrl.Text = lstSrc[4];
+            lblTotal.Text = string.Format("/ {0}", lstSrc.Count);
 
-            foreach (string strsrc in lstSrc)
+            this.Invoke(new Action(delegate ()
             {
-
-            }
+                foreach (string strsrc in lstSrc)
+                {
+                    i++;
+                    GetMapImage(lstSrc[i]);
+                    txtGo.Text = i.ToString();
+                    Refresh();
+                    Thread.Sleep(50);
+                }
+            }));
         }
 
         private void GetMapImage(string base64String)
         {
             try
             {
-                var base64Data = Regex.Match(base64String, @"data:image/(?/<type>.*?),(?<data>.*)").Groups["data"].Value;
+                var base64Data = Regex.Match(base64String, @"data:image/(?<type>.*?),(?<data>.*)").Groups["data"].Value;
                 var binData = Convert.FromBase64String(base64Data);
 
                 using (var stream = new MemoryStream(binData))
@@ -109,19 +115,54 @@ namespace WebCrawling01
                     if (stream.Length == 0)
                     {
                         picMain.Load(base64String);
-                        
+                        txtGo.Text = i.ToString();                        
                     }
                     else
                     {
                         var image = Image.FromStream(stream);
                         picMain.Image = image;
                     }
+                    txtUrl.Text = base64String;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+            // thread겹치지 말라고 
+            this.Invoke(new Action(delegate ()
+            {
+                i--;
+
+                GetMapImage(lstSrc[i]);
+                txtGo.Text = i.ToString();
+            }));
+        }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            // thread겹치지 말라고 
+            this.Invoke(new Action(delegate ()
+            {
+                Int32.TryParse(txtGo.Text, out i);
+                GetMapImage(lstSrc[i]);
+                txtGo.Text = i.ToString();
+            }));
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            // thread겹치지 말라고 
+            this.Invoke(new Action(delegate ()
+            {
+                i++;
+                GetMapImage(lstSrc[i]);
+                txtGo.Text = i.ToString();
+            }));
         }
     }
 }
