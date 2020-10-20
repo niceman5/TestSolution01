@@ -27,7 +27,7 @@ namespace _00.AlgorithmTest
             //Quize_소수찾기 q = new Quize_소수찾기();
             //q.Answer();
 
-            Quize_3진법뒤집기 q = new Quize_3진법뒤집기);
+            Quize_3진법뒤집기 q = new Quize_3진법뒤집기();
             q.Answer();
 
         }

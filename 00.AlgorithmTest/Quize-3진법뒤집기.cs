@@ -39,15 +39,16 @@ namespace _00.AlgorithmTest
     {
         List<int> lst3 = new List<int>();
 
+        /// <summary>
+        /// 3진법을 구한다
+        /// </summary>
+        /// <param name="n"></param>
         private void Num3(int n)
         {
-            int i1 = 0;     //몫
-            int i2 = 0;     //나머지
-
-            while (i1 > 0)
+            while (n > 0)
             {
-                i1 = n / 3; //몫
-                i2 = n % 3; //나머지
+                lst3.Add(n % 3);
+                n = n / 3;          //몫
             }
         }
 
@@ -58,14 +59,18 @@ namespace _00.AlgorithmTest
             
             Num3(n);
 
+            lst3.Reverse();
 
-
+            for (int i = 0; i < lst3.Count; i++)
+            {
+                answer += lst3[i] * (int)(Math.Pow(3, i));
+            }
             return answer;
         }
 
         public void Answer()
         {
-            Console.WriteLine(solution(45));            
+            Console.WriteLine(solution(45));
         }
     }
 }
