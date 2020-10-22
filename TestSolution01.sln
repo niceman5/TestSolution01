@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.AlgorithmTest", "00.Algo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "49.WebCrawling01", "WebCrawling01\49.WebCrawling01.csproj", "{5466671E-E0B7-46C3-9261-E874CFDC04A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.ListTest", "42.ListTest\42.ListTest.csproj", "{197B88D3-7A25-4E55-9C27-E17092E52B75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5466671E-E0B7-46C3-9261-E874CFDC04A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{197B88D3-7A25-4E55-9C27-E17092E52B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197B88D3-7A25-4E55-9C27-E17092E52B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197B88D3-7A25-4E55-9C27-E17092E52B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197B88D3-7A25-4E55-9C27-E17092E52B75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
