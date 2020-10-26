@@ -39,7 +39,13 @@ namespace _00.AlgorithmTest
             //Quize_문자열내림차순으로배치하기 q = new Quize_문자열내림차순으로배치하기();
             //q.Answer();
 
-            Quize_수박수박수박수박수박수 q = new Quize_수박수박수박수박수박수();
+            //Quize_수박수박수박수박수박수 q = new Quize_수박수박수박수박수박수();
+            //q.Answer();
+
+            //Quize2_다리를지나는트럭 q = new Quize2_다리를지나는트럭();
+            //q.Answer();
+
+            Quize2_주식가격 q = new Quize2_주식가격();
             q.Answer();
         }
     }

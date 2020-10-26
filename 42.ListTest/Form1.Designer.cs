@@ -48,6 +48,7 @@
             this.txtList = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtChnageList = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numPosition)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +67,7 @@
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(100, 20);
             this.txtData.TabIndex = 1;
+            this.txtData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtData_KeyDown);
             // 
             // label2
             // 
@@ -101,6 +103,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
@@ -110,6 +113,7 @@
             this.btnRemove.TabIndex = 5;
             this.btnRemove.Text = "삭제";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // label3
             // 
@@ -188,7 +192,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(491, 25);
+            this.label7.Location = new System.Drawing.Point(459, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 13);
             this.label7.TabIndex = 15;
@@ -202,19 +206,21 @@
             this.btnChange.TabIndex = 16;
             this.btnChange.Text = "변경";
             this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // txtList
             // 
             this.txtList.Enabled = false;
-            this.txtList.Location = new System.Drawing.Point(494, 51);
+            this.txtList.Location = new System.Drawing.Point(462, 51);
+            this.txtList.Multiline = true;
             this.txtList.Name = "txtList";
-            this.txtList.Size = new System.Drawing.Size(265, 20);
+            this.txtList.Size = new System.Drawing.Size(265, 183);
             this.txtList.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(491, 253);
+            this.label8.Location = new System.Drawing.Point(459, 253);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 13);
             this.label8.TabIndex = 18;
@@ -223,16 +229,26 @@
             // txtChnageList
             // 
             this.txtChnageList.Enabled = false;
-            this.txtChnageList.Location = new System.Drawing.Point(494, 269);
+            this.txtChnageList.Location = new System.Drawing.Point(462, 269);
+            this.txtChnageList.Multiline = true;
             this.txtChnageList.Name = "txtChnageList";
-            this.txtChnageList.Size = new System.Drawing.Size(265, 20);
+            this.txtChnageList.Size = new System.Drawing.Size(265, 191);
             this.txtChnageList.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Location = new System.Drawing.Point(436, 11);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 450);
+            this.panel1.TabIndex = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 469);
+            this.ClientSize = new System.Drawing.Size(740, 469);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtChnageList);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtList);
@@ -255,6 +271,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numPosition)).EndInit();
             this.ResumeLayout(false);
@@ -284,6 +301,7 @@
         private System.Windows.Forms.TextBox txtList;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtChnageList;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
