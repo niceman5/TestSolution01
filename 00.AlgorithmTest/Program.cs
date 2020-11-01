@@ -1,4 +1,5 @@
 ﻿using System;
+using Util;
 
 namespace _00.AlgorithmTest
 {
@@ -45,8 +46,9 @@ namespace _00.AlgorithmTest
             //Quize2_다리를지나는트럭 q = new Quize2_다리를지나는트럭();
             //q.Answer();
 
-            Quize2_주식가격 q = new Quize2_주식가격();
-            q.Answer();
+            //Quize2_주식가격 q = new Quize2_주식가격();
+            //q.Answer();
+            Logger.Log("로그테스트입니다.");
         }
     }
 }
