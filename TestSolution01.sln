@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Util", "Util\Util.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.TreeViewTest", "42.TreeViewTest\42.TreeViewTest.csproj", "{EEDD7BE5-F686-4D45-9183-180DC0E23BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ConsoleTest", "01.ConsoleTest\01.ConsoleTest.csproj", "{D3338C52-6FA6-4AEA-A7FF-BDA6B7E1CE5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ConsoleTest", "01.ConsoleTest\01.ConsoleTest.csproj", "{D3338C52-6FA6-4AEA-A7FF-BDA6B7E1CE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WinServiceTest", "02.WinServiceTest\02.WinServiceTest.csproj", "{E03DC431-BDBF-4FA6-88DD-790D6511594B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{D3338C52-6FA6-4AEA-A7FF-BDA6B7E1CE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3338C52-6FA6-4AEA-A7FF-BDA6B7E1CE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3338C52-6FA6-4AEA-A7FF-BDA6B7E1CE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03DC431-BDBF-4FA6-88DD-790D6511594B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03DC431-BDBF-4FA6-88DD-790D6511594B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03DC431-BDBF-4FA6-88DD-790D6511594B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03DC431-BDBF-4FA6-88DD-790D6511594B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
