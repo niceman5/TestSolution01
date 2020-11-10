@@ -1,5 +1,6 @@
 ﻿using System;
 using Npgg;
+using System.Configuration;
 
 namespace _01.ConsoleTest
 {
@@ -23,6 +24,14 @@ namespace _01.ConsoleTest
 
         static void Main(string[] args)
         {
+            var ThreadTime = Convert.ToInt32(ConfigurationSettings.AppSettings["ThreadTime"]);
+            var ServerIP = ConfigurationSettings.AppSettings["ServerIP"];
+            var ServerPort = ConfigurationSettings.AppSettings["ServerPort"];
+
+            Console.WriteLine(ThreadTime);
+            Console.WriteLine(ServerIP);
+            Console.WriteLine(ServerPort);
+
             var items = new[]
             {
                 new Item(){ Name= "Leoric's Crown", Rarity = Rarity.Normal, Slot ="Helm"},
