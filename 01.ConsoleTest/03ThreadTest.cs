@@ -1,23 +1,16 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.IO;
-using System.ServiceProcess;
+using System.Text;
 using System.Threading;
 
-namespace _02.WinServiceTest
+namespace _01.ConsoleTest
 {
-    [RunInstaller(true)]
-    public partial class Service1 : ServiceBase
+    class ThreadTest
     {
-
         public Thread worker = null;
 
-        public Service1()
-        {
-            InitializeComponent();
-        }
-
-        protected override void OnStart(string[] args)
+        public void ThreadPrint()
         {
             try
             {
@@ -25,10 +18,10 @@ namespace _02.WinServiceTest
                 worker = new Thread(start);
                 worker.Start();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e.StackTrace);
-                
+
+                throw;
             }
         }
 
@@ -46,20 +39,5 @@ namespace _02.WinServiceTest
             }
         }
 
-        protected override void OnStop()
-        {
-            try
-            {
-                if ((worker != null) & worker.IsAlive)
-                {
-                    worker.Abort();
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.StackTrace);
-            }
-
-        }
     }
 }
