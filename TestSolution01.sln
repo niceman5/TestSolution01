@@ -57,7 +57,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WinServiceTest", "02.Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogtTest", "Log4netTest\SerilogtTest.csproj", "{2B293571-F73D-439C-A99E-7B3C8563DE9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{C9C1A886-1D58-421E-881B-9AA63F2BD67E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{C9C1A886-1D58-421E-881B-9AA63F2BD67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "45DataBase", "45DataBase\45DataBase.csproj", "{E10C3414-38D4-4A8D-B689-6713ABBDE0DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{C9C1A886-1D58-421E-881B-9AA63F2BD67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C1A886-1D58-421E-881B-9AA63F2BD67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C1A886-1D58-421E-881B-9AA63F2BD67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E10C3414-38D4-4A8D-B689-6713ABBDE0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10C3414-38D4-4A8D-B689-6713ABBDE0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10C3414-38D4-4A8D-B689-6713ABBDE0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10C3414-38D4-4A8D-B689-6713ABBDE0DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
