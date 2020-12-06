@@ -14,7 +14,7 @@ namespace _45DataBase
 {
     public partial class Form1 : Form
     {
-        private IDbConnection db;
+        IAuthorsRepository authorsRepository;
 
         public Form1()
         {
@@ -23,16 +23,12 @@ namespace _45DataBase
 
         private void btnDBLoad_Click(object sender, EventArgs e)
         {
-
         }
 
-        private void DBConnect()
+        private void Form1_Load(object sender, EventArgs e)
         {
-            db = new SqlConnection("Data Source=localhost;Initial Catalog=pubs;Integrated Security=False;User Id=niceman5;Password=gustnr35;MultipleActiveResultSets=True;");
-            
-            string sql = "SELECT * FROM pubs.DBO.authors";
-
-            db.Query<AttacheFileModel>(sql, commandType: CommandType.Text).ToList();
+            authorsRepository = new AuthorsRepository();
+            dgData.DataSource = authorsRepository.GetAuthorsAll();
         }
     }
 }

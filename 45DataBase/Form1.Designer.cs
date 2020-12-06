@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtPath = new System.Windows.Forms.TextBox();
             this.btnDBLoad = new System.Windows.Forms.Button();
+            this.txtPath = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtQuery = new System.Windows.Forms.TextBox();
-            this.btnEx3 = new System.Windows.Forms.Button();
-            this.btnEx2 = new System.Windows.Forms.Button();
             this.btnEx1 = new System.Windows.Forms.Button();
+            this.btnEx2 = new System.Windows.Forms.Button();
+            this.btnEx3 = new System.Windows.Forms.Button();
+            this.txtQuery = new System.Windows.Forms.TextBox();
             this.btnExec = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgData = new System.Windows.Forms.DataGridView();
@@ -56,14 +56,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "가져오기";
             // 
-            // txtPath
-            // 
-            this.txtPath.Enabled = false;
-            this.txtPath.Location = new System.Drawing.Point(6, 19);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(538, 20);
-            this.txtPath.TabIndex = 0;
-            // 
             // btnDBLoad
             // 
             this.btnDBLoad.Location = new System.Drawing.Point(550, 16);
@@ -73,6 +65,14 @@
             this.btnDBLoad.Text = "DB Load";
             this.btnDBLoad.UseVisualStyleBackColor = true;
             this.btnDBLoad.Click += new System.EventHandler(this.btnDBLoad_Click);
+            // 
+            // txtPath
+            // 
+            this.txtPath.Enabled = false;
+            this.txtPath.Location = new System.Drawing.Point(6, 19);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.Size = new System.Drawing.Size(538, 20);
+            this.txtPath.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -87,22 +87,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "조회";
             // 
-            // txtQuery
+            // btnEx1
             // 
-            this.txtQuery.Location = new System.Drawing.Point(7, 48);
-            this.txtQuery.Multiline = true;
-            this.txtQuery.Name = "txtQuery";
-            this.txtQuery.Size = new System.Drawing.Size(632, 166);
-            this.txtQuery.TabIndex = 0;
-            // 
-            // btnEx3
-            // 
-            this.btnEx3.Location = new System.Drawing.Point(551, 19);
-            this.btnEx3.Name = "btnEx3";
-            this.btnEx3.Size = new System.Drawing.Size(87, 23);
-            this.btnEx3.TabIndex = 2;
-            this.btnEx3.Text = "예제3";
-            this.btnEx3.UseVisualStyleBackColor = true;
+            this.btnEx1.Location = new System.Drawing.Point(365, 19);
+            this.btnEx1.Name = "btnEx1";
+            this.btnEx1.Size = new System.Drawing.Size(87, 23);
+            this.btnEx1.TabIndex = 4;
+            this.btnEx1.Text = "예제1";
+            this.btnEx1.UseVisualStyleBackColor = true;
             // 
             // btnEx2
             // 
@@ -113,14 +105,22 @@
             this.btnEx2.Text = "예제2";
             this.btnEx2.UseVisualStyleBackColor = true;
             // 
-            // btnEx1
+            // btnEx3
             // 
-            this.btnEx1.Location = new System.Drawing.Point(365, 19);
-            this.btnEx1.Name = "btnEx1";
-            this.btnEx1.Size = new System.Drawing.Size(87, 23);
-            this.btnEx1.TabIndex = 4;
-            this.btnEx1.Text = "예제1";
-            this.btnEx1.UseVisualStyleBackColor = true;
+            this.btnEx3.Location = new System.Drawing.Point(551, 19);
+            this.btnEx3.Name = "btnEx3";
+            this.btnEx3.Size = new System.Drawing.Size(87, 23);
+            this.btnEx3.TabIndex = 2;
+            this.btnEx3.Text = "예제3";
+            this.btnEx3.UseVisualStyleBackColor = true;
+            // 
+            // txtQuery
+            // 
+            this.txtQuery.Location = new System.Drawing.Point(7, 48);
+            this.txtQuery.Multiline = true;
+            this.txtQuery.Name = "txtQuery";
+            this.txtQuery.Size = new System.Drawing.Size(632, 166);
+            this.txtQuery.TabIndex = 0;
             // 
             // btnExec
             // 
@@ -161,7 +161,9 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
