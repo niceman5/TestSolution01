@@ -49,8 +49,8 @@ namespace _01.ConsoleTest
             //var t = new _06LinqTest02();
             //t.Run();
 
-            
-
+            var t = new _09iposInfo();
+            t.Run();
         }
     }
 }
