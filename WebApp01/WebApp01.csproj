@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="04.DataBase\" />
+    <Folder Include="04.DataBase\01.StoredProcedure\" />
+    <Folder Include="04.DataBase\00.Tables\" />
   </ItemGroup>
 
 </Project>
