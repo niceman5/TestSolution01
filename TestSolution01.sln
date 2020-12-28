@@ -63,7 +63,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "45DataBase", "45DataBase\45
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "46MetroUITest", "46MetroUITest\46MetroUITest.csproj", "{24472DFA-8896-4960-8B8D-1C1638175C7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp01", "WebApp01\WebApp01.csproj", "{84CDE52F-AA00-4625-BAB3-BE1111BFBDF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp01", "WebApp01\WebApp01.csproj", "{84CDE52F-AA00-4625-BAB3-BE1111BFBDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

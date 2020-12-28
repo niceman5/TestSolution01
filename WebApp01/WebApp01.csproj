@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.1" />
@@ -16,8 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="04.DataBase\01.StoredProcedure\" />
     <Folder Include="04.DataBase\00.Tables\" />
+    <Folder Include="04.DataBase\01.StoredProcedure\01.USERS\" />
+    <Folder Include="04.DataBase\01.StoredProcedure\02.BOARDS\" />
+    <Folder Include="04.DataBase\02.Views\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
 
 </Project>
