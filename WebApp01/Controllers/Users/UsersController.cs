@@ -22,7 +22,8 @@ namespace WebApp01.Controllers.Users
         }
 
         [HttpPost]
-        public async Task<int> Add(UsersModel user)
+        // public async Task<int> Add(UsersModel user)
+        public int Add(UsersModel user)
         {
 
             var result = 0;
@@ -31,7 +32,8 @@ namespace WebApp01.Controllers.Users
         }
 
         [HttpPost]
-        public async Task<int> Update(UsersModel user)
+        // public async Task<int> Update(UsersModel user)
+        public int Update(UsersModel user)
         {
             var result = 0;
 
@@ -39,7 +41,8 @@ namespace WebApp01.Controllers.Users
         }
 
         [HttpDelete]
-        public async Task<int> Delete(int user_id)
+        // public async Task<int> Delete(int user_id)
+        public int Delete(int user_id)
         {
             var result = 0;
 
@@ -47,22 +50,25 @@ namespace WebApp01.Controllers.Users
         }
 
         [HttpGet]
-        public async Task<List<UsersModel>> ListUsers(int user_no, string key, int page, int cnt_page)
+        // public async Task<List<UsersModel>> ListUsers(int user_no, string key, int page, int cnt_page)
+        public List<UsersModel> ListUsers(int user_no, string key, int page, int cnt_page)
         {
             var result = new List<UsersModel>();
 
             return result;
         }
 
-        [HttpGet]        
-        public async Task<UsersModel> GetUser(int user_no)
+        [HttpGet]
+        // public async Task<UsersModel> GetUser(int user_no)
+        public UsersModel GetUser(int user_no)
         {
             var result = new UsersModel(); ;
 
             return result;
         }
 
-        public async Task<string> Test()
+        [HttpGet]
+        public string Test()
         {
             return "hello world";
         }

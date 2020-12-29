@@ -33,5 +33,10 @@ namespace WebApp01.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public string Test() 
+        {
+            return "Hello Test!!!!";
+        }
     }
 }
