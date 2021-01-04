@@ -53,7 +53,8 @@ namespace _01.ConsoleTest
             //t.Run();
 
             var t = new _99일반테스트_책내용();
-
+            // t.Q100Page();
+            t.Q99Page();
         }
     }
 }

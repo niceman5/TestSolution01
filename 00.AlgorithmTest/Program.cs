@@ -48,11 +48,13 @@ namespace _00.AlgorithmTest
 
             //Quize2_주식가격 q = new Quize2_주식가격();
             //q.Answer();
-            Logger.Log("로그테스트입니다.");
+            //Logger.Log("로그테스트입니다.");
 
+            //Quize2기능개발 q = new Quize2기능개발();
+            //q.Answer();
 
-
-
+            Quize2_프린터 q = new Quize2_프린터();
+            q.Answer();
         }
     }
 }
