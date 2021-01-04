@@ -27,19 +27,27 @@ namespace _00.AlgorithmTest
             //    Console.WriteLine($"[{item.Key}, {item.Value}]" );
             //}
 
-            foreach (KeyValuePair<int, int> item in slst)
+            //foreach (KeyValuePair<int, int> item in slst)
+            //{
+            //    Console.WriteLine($"[{item.Key}, {item.Value}]");
+            //}
+            //Console.WriteLine(slst.Find(x => x.Key == priorities[location]));
+            for (int i = 0; i < slst.Count; i++)
             {
-                Console.WriteLine($"[{item.Key}, {item.Value}]");
+                if (slst[i].Key == priorities[location] && slst[i].Value == location)
+                {
+                    answer = i;
+                    break;
+                }
             }
-            Console.WriteLine(slst.Find(x => x.Key == priorities[location]));
 
             return answer;
         }
 
         public void Answer()
         {
-            int res = solution(new int[] { 2,1,3,2 },2);
-            //int[] res = solution(new int[] { 1,1,9,1,1,1 }, 0);
+            //int res = solution(new int[] { 2,1,3,2 },2);
+            int res = solution(new int[] { 1,1,9,1,1,1 }, 0);
             
             Console.Write(res);
         }
