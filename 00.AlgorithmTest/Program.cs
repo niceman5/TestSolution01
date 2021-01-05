@@ -53,7 +53,8 @@ namespace _00.AlgorithmTest
             //Quize2기능개발 q = new Quize2기능개발();
             //q.Answer();
 
-            Quize2_프린터 q = new Quize2_프린터();
+            //Quize2_프린터 q = new Quize2_프린터();
+            Quize2_스킬트리 q = new Quize2_스킬트리();
             q.Answer();
         }
     }
