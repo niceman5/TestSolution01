@@ -14,6 +14,7 @@ namespace _00.AlgorithmTest
             
 
             var prt = new List<data>();
+            var ans = new List<data>();
 
             for (int i = 0; i < priorities.Length; i++)
             {
@@ -22,24 +23,21 @@ namespace _00.AlgorithmTest
 
             var slst = prt.OrderByDescending(x => x.Key).ThenBy(x => x.Value).ToList();
 
-            //foreach (KeyValuePair<int,int> item in prt)
-            //{
-            //    Console.WriteLine($"[{item.Key}, {item.Value}]" );
-            //}
-
-            //foreach (KeyValuePair<int, int> item in slst)
-            //{
-            //    Console.WriteLine($"[{item.Key}, {item.Value}]");
-            //}
-            //Console.WriteLine(slst.Find(x => x.Key == priorities[location]));
-            for (int i = 0; i < slst.Count; i++)
+            foreach (KeyValuePair<int, int> item in prt)
             {
-                if (slst[i].Key == priorities[location] && slst[i].Value == location)
-                {
-                    answer = i;
-                    break;
-                }
+                Console.WriteLine($"[{item.Key}, {item.Value}]");
             }
+
+
+
+            //for (int i = 0; i < slst.Count; i++)
+            //{
+            //    if (slst[i].Key == priorities[location] && slst[i].Value == location)
+            //    {
+            //        answer = i;
+            //        break;
+            //    }
+            //}
 
             return answer;
         }
