@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +85,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="00.TS_Test\00_Greet.ts" />
+    <TypeScriptCompile Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.ts" />
+    <TypeScriptCompile Include="04.Syntax\Syntax.ts" />
     <TypeScriptCompile Include="HelloWorld.ts" />
   </ItemGroup>
   <ItemGroup>
