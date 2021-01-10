@@ -67,6 +67,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp01", "WebApp01\WebApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptHTMLApp1", "TypeScriptHTMLApp1\TypeScriptHTMLApp1.csproj", "{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTypeScript", "WebTypeScript\WebTypeScript.csproj", "{1A6A5DAF-26F6-44FE-B3DA-D4B662867BAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6A5DAF-26F6-44FE-B3DA-D4B662867BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6A5DAF-26F6-44FE-B3DA-D4B662867BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6A5DAF-26F6-44FE-B3DA-D4B662867BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6A5DAF-26F6-44FE-B3DA-D4B662867BAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
