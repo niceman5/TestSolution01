@@ -61,5 +61,22 @@ var StringKeyword;
     if (x !== 20) {
         console.log("x\uB294 20\uC774 \uC544\uB2D9\uB2C8\uB2E4.");
     }
+    var me = "hello world!";
+    console.log(me.toUpperCase());
+    console.log(me.toLowerCase());
+    console.log(me.replace("hello", "안녕하세요").replace("world", "세계"));
+    var orign = "안녕하세요. 안녕하세요.";
+    var result = orign.replace("안녕", "Hi"); //하나만 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/, "Hi"); //하나만 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/g, "Hi"); //모두 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/img, "Hi"); //대소문자 구분없이 모두 변경됨
+    console.log(result);
+    var s1 = new String("Hello."); //string class의 인스턴스 생성
+    var s2 = "안녕하세요."; //string 키워드
+    console.log(s1 + " " + s2);
+    console.log(s1.length + "," + s2.length);
 })(StringKeyword || (StringKeyword = {}));
 //# sourceMappingURL=StringKeyword.js.map

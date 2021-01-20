@@ -79,4 +79,25 @@
     if (x !== 20) {
         console.log(`x는 20이 아닙니다.`);
     }   
+
+    let me: string = "hello world!";
+    console.log(me.toUpperCase());
+    console.log(me.toLowerCase());
+
+    console.log(me.replace("hello", "안녕하세요").replace("world", "세계"));
+
+    const orign = "안녕하세요. 안녕하세요.";
+    let result = orign.replace("안녕", "Hi");     //하나만 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/, "Hi");     //하나만 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/g, "Hi");     //모두 변경됨
+    console.log(result);
+    result = orign.replace(/안녕/img, "Hi");     //대소문자 구분없이 모두 변경됨
+    console.log(result);
+
+    let s1 = new String("Hello.");      //string class의 인스턴스 생성
+    let s2: string = "안녕하세요.";          //string 키워드
+    console.log(`${s1} ${s2}`);
+    console.log(`${s1.length},${s2.length}`);
 }
