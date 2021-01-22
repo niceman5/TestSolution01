@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.html" />
+    <Content Include="css\app.css" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,14 +90,17 @@
   <ItemGroup>
     <TypeScriptCompile Include="00.TS_Test\00_Greet.ts" />
     <TypeScriptCompile Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.ts" />
+    <TypeScriptCompile Include="04.Syntax\AbstractClass.ts" />
     <TypeScriptCompile Include="04.Syntax\Arrays.ts" />
     <TypeScriptCompile Include="04.Syntax\AutoVariable.ts" />
     <TypeScriptCompile Include="04.Syntax\ConstructorPrivate.ts" />
     <TypeScriptCompile Include="04.Syntax\Controls.ts" />
     <TypeScriptCompile Include="04.Syntax\EnumTest.ts" />
     <TypeScriptCompile Include="04.Syntax\FilterEvent.ts" />
+    <TypeScriptCompile Include="04.Syntax\FunctionOverload.ts" />
     <TypeScriptCompile Include="04.Syntax\functionTest.ts" />
     <TypeScriptCompile Include="04.Syntax\Generics.ts" />
+    <TypeScriptCompile Include="04.Syntax\InheritanceTest.ts" />
     <TypeScriptCompile Include="04.Syntax\interfaceTest.ts" />
     <TypeScriptCompile Include="04.Syntax\ListTest.ts" />
     <TypeScriptCompile Include="04.Syntax\LiteralType.ts" />
@@ -106,10 +111,13 @@
     <TypeScriptCompile Include="04.Syntax\NumberNote.ts" />
     <TypeScriptCompile Include="04.Syntax\ObjectAndClass.ts" />
     <TypeScriptCompile Include="04.Syntax\ObjectLiteral.ts" />
+    <TypeScriptCompile Include="04.Syntax\ParamsTest.ts" />
+    <TypeScriptCompile Include="04.Syntax\PropertyTest.ts" />
     <TypeScriptCompile Include="04.Syntax\StringKeyword.ts" />
     <TypeScriptCompile Include="04.Syntax\Syntax.ts" />
     <TypeScriptCompile Include="04.Syntax\TypeAssertion.ts" />
     <TypeScriptCompile Include="HelloWorld.ts" />
+    <TypeScriptCompile Include="js\app.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

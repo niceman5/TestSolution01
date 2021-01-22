@@ -42,6 +42,17 @@ var ArrayString;
             index_1 += "def";
         }
     }
+    console.log("indexer테스트");
+    var cars = ["AAA", "BBB", "CCC"];
+    //index값만 가져올때...
+    for (var key in cars) {
+        console.log(key + " - " + cars[key]);
+    }
+    //배열에서 값을 가져올때
+    for (var _i = 0, cars_1 = cars; _i < cars_1.length; _i++) {
+        var value = cars_1[_i];
+        console.log("" + value);
+    }
 })(ArrayString || (ArrayString = {}));
 console.log(aaaa);
 //# sourceMappingURL=Arrays.js.map

@@ -51,6 +51,18 @@ namespace ArrayString {
             index += "def";
         }
     }
+
+    console.log("indexer테스트");
+    let cars = ["AAA", "BBB", "CCC"];
+
+    //index값만 가져올때...
+    for (let key in cars) {
+        console.log(`${key} - ${cars[key]}`);
+    }
+    //배열에서 값을 가져올때
+    for (let value of cars) {
+        console.log(`${value}`);
+    }
 }
 
 console.log(aaaa);
