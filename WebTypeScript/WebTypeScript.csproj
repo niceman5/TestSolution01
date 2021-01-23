@@ -71,8 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.html" />
+    <Content Include="ClassBankAccount.html" />
     <Content Include="css\app.css" />
     <Content Include="index.html" />
+    <Content Include="interfaceClassDemo.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +95,7 @@
     <TypeScriptCompile Include="04.Syntax\AbstractClass.ts" />
     <TypeScriptCompile Include="04.Syntax\Arrays.ts" />
     <TypeScriptCompile Include="04.Syntax\AutoVariable.ts" />
+    <TypeScriptCompile Include="04.Syntax\ClassTest.ts" />
     <TypeScriptCompile Include="04.Syntax\ConstructorPrivate.ts" />
     <TypeScriptCompile Include="04.Syntax\Controls.ts" />
     <TypeScriptCompile Include="04.Syntax\EnumTest.ts" />
@@ -113,11 +116,14 @@
     <TypeScriptCompile Include="04.Syntax\ObjectLiteral.ts" />
     <TypeScriptCompile Include="04.Syntax\ParamsTest.ts" />
     <TypeScriptCompile Include="04.Syntax\PropertyTest.ts" />
+    <TypeScriptCompile Include="04.Syntax\SortByGenericType.ts" />
     <TypeScriptCompile Include="04.Syntax\StringKeyword.ts" />
     <TypeScriptCompile Include="04.Syntax\Syntax.ts" />
     <TypeScriptCompile Include="04.Syntax\TypeAssertion.ts" />
     <TypeScriptCompile Include="HelloWorld.ts" />
     <TypeScriptCompile Include="js\app.ts" />
+    <TypeScriptCompile Include="js\ClassBankAccount.ts" />
+    <TypeScriptCompile Include="js\interfaceClassDemo.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

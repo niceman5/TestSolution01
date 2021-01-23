@@ -20,5 +20,19 @@ var GenericsDemo;
     a3.tag = true;
     console.log(a3.tag);
     //Array클래스의 제네릭버젼은 Array<T>형태로 표현
+    //클래스<T>형태로 제네릭 클래스 만들기
+    var Cup = /** @class */ (function () {
+        function Cup() {
+        }
+        return Cup;
+    }());
+    //형식 매개변수 T에 string전달하여 문자열 저장하는 속성 생성
+    var text = new Cup();
+    //text.Content = 1234;    //안됨
+    text.Content = "aaaaa";
+    var int = new Cup();
+    //int.Content = "111";        //에러
+    int.Content = 2222;
+    console.log(text.Content + " " + int.Content);
 })(GenericsDemo || (GenericsDemo = {}));
 //# sourceMappingURL=Generics.js.map
