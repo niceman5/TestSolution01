@@ -26,6 +26,10 @@ namespace WebTypeScriptCounterApp
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();      //추가 순서가 일치해야 함....default먼저...
+            app.UseStaticFiles();       //추가  
+            
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
