@@ -81,6 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Modules\tsconfig.json.back" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -109,6 +110,7 @@
     <TypeScriptCompile Include="04.Syntax\LiteralType.ts" />
     <TypeScriptCompile Include="04.Syntax\LocalAndGlobal.ts" />
     <TypeScriptCompile Include="04.Syntax\MathTest.ts" />
+    <TypeScriptCompile Include="04.Syntax\ModuleTest.ts" />
     <TypeScriptCompile Include="04.Syntax\NamespaceTest.ts" />
     <TypeScriptCompile Include="04.Syntax\NullTest.ts" />
     <TypeScriptCompile Include="04.Syntax\NumberNote.ts" />
@@ -119,11 +121,14 @@
     <TypeScriptCompile Include="04.Syntax\SortByGenericType.ts" />
     <TypeScriptCompile Include="04.Syntax\StringKeyword.ts" />
     <TypeScriptCompile Include="04.Syntax\Syntax.ts" />
+    <TypeScriptCompile Include="04.Syntax\TupleTypeTest.ts" />
     <TypeScriptCompile Include="04.Syntax\TypeAssertion.ts" />
     <TypeScriptCompile Include="HelloWorld.ts" />
     <TypeScriptCompile Include="js\app.ts" />
     <TypeScriptCompile Include="js\ClassBankAccount.ts" />
     <TypeScriptCompile Include="js\interfaceClassDemo.ts" />
+    <TypeScriptCompile Include="Modules\moduletest.ts" />
+    <TypeScriptCompile Include="Modules\util.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
