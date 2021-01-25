@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Npgg;
 using System.Configuration;
 using System.Security.Cryptography;
@@ -52,9 +53,20 @@ namespace _01.ConsoleTest
             //var t = new _09iposInfo();
             //t.Run();
 
-            var t = new _99일반테스트_책내용();
-            // t.Q100Page();
-            t.Q99Page();
+            //var t = new _99일반테스트_책내용();
+            //// t.Q100Page();
+            //t.Q99Page();
+
+            //object[] ar = { 1, 2, 3, 4, 5, "aaa", "bbb" };
+            ////var q = ar.Cast<int>();
+            //var q = ar.OfType<int>();
+            //Console.WriteLine(q.Sum());
+
+
+            object[] ar = null;
+
+            var q = ar.OfType<int>();
+            Console.WriteLine(q.Sum());
         }
     }
 }
