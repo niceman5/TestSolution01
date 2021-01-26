@@ -11,4 +11,10 @@
             this.divHtml.innerHTML = html;
         }        
     }
+    writeLog(html: string) {
+        console.log(html);
+        if (this.divHtml !== null) {
+            this.divHtml.innerHTML = `<hr />${html}`;
+        }        
+    }
 }

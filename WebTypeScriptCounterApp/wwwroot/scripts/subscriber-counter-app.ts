@@ -2,9 +2,13 @@
 
 // 삼중 슬래쉬 참조, 삼중 슬래쉬 지시문
 /// <reference path="ChangeType.ts">
+/// <reference path="CounterType.ts">
+/// <reference path="CounterList.ts">
 /// <reference path="HtmlResponse.ts">
 /// <reference path="SubscriberCounter.ts">
 /// <reference path="HtmlWriter.ts">
+/// <reference path="BlogCounter.ts">
+/// <reference path="YoutubeCounter.ts">
 
 
 
