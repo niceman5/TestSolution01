@@ -103,6 +103,7 @@
     <TypeScriptCompile Include="04.Syntax\Generics.ts" />
     <TypeScriptCompile Include="04.Syntax\InheritanceTest.ts" />
     <TypeScriptCompile Include="04.Syntax\interfaceTest.ts" />
+    <TypeScriptCompile Include="04.Syntax\jsonTest01.ts" />
     <TypeScriptCompile Include="04.Syntax\ListTest.ts" />
     <TypeScriptCompile Include="04.Syntax\LiteralType.ts" />
     <TypeScriptCompile Include="04.Syntax\LocalAndGlobal.ts" />
