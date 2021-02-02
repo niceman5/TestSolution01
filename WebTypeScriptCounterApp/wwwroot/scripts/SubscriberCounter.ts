@@ -4,7 +4,11 @@
 // 추상클래스로 
 abstract class SubscriberCounter {
     //필드
+
+    // _count = 7000;
     private _count = 7000;
+    
+
     id: number;
     title :string
 
