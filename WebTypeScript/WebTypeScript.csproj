@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.html" />
+    <Content Include="boot\test01.html" />
     <Content Include="ClassBankAccount.html" />
     <Content Include="css\app.css" />
     <Content Include="index.html" />

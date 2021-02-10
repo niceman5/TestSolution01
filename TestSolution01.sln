@@ -79,7 +79,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebVue_Test01", "..\WebVue_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleExcelTest01", "ConsoleExcelTest01\ConsoleExcelTest01.csproj", "{50152DC9-D7F3-4A8C-9FA5-9CA33CE48B33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMailSend", "ConsoleMailSend\ConsoleMailSend.csproj", "{2CA17D2B-6A7C-48A0-988C-97609AA6B6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMailSend", "ConsoleMailSend\ConsoleMailSend.csproj", "{2CA17D2B-6A7C-48A0-988C-97609AA6B6E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBootstrap", "WebBootstrap\WebBootstrap.csproj", "{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{2CA17D2B-6A7C-48A0-988C-97609AA6B6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA17D2B-6A7C-48A0-988C-97609AA6B6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA17D2B-6A7C-48A0-988C-97609AA6B6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
