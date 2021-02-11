@@ -68,6 +68,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="03_HelloWorld\HelloWorldWebOnly\HelloWorldWebOnly.html" />
+    <Content Include="admin_template\.babelrc.js" />
+    <Content Include="admin_template\build\change-version.js" />
+    <Content Include="admin_template\build\postcss.config.js" />
+    <Content Include="admin_template\build\pug.js" />
+    <Content Include="admin_template\build\svg.js" />
+    <Content Include="admin_template\build\vendors-sass.js" />
+    <Content Include="admin_template\build\vendors.js" />
+    <Content Include="admin_template\build\watch-pug.js" />
+    <Content Include="admin_template\pub\base\tooltips.html" />
+    <Content Include="admin_template\src\404.html" />
+    <Content Include="admin_template\src\500.html" />
+    <Content Include="admin_template\src\blank.html" />
+    <Content Include="admin_template\src\charts.html" />
+    <Content Include="admin_template\src\colors.html" />
+    <Content Include="admin_template\src\index.html" />
+    <Content Include="admin_template\src\login.html" />
+    <Content Include="admin_template\src\register.html" />
+    <Content Include="admin_template\src\typography.html" />
+    <Content Include="admin_template\src\widgets.html" />
     <Content Include="boot\test01.html" />
     <Content Include="ClassBankAccount.html" />
     <Content Include="css\app.css" />
@@ -79,6 +98,53 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin_template\build\.eslintrc.json" />
+    <Content Include="admin_template\build\.stylelintrc" />
+    <Content Include="admin_template\pub\404.pug" />
+    <Content Include="admin_template\pub\500.pug" />
+    <Content Include="admin_template\pub\blank.pug" />
+    <Content Include="admin_template\pub\charts.pug" />
+    <Content Include="admin_template\pub\colors.pug" />
+    <Content Include="admin_template\pub\index.pug" />
+    <Content Include="admin_template\pub\login.pug" />
+    <Content Include="admin_template\pub\register.pug" />
+    <Content Include="admin_template\pub\typography.pug" />
+    <Content Include="admin_template\pub\widgets.pug" />
+    <Content Include="admin_template\pub\_layout\default.pug" />
+    <Content Include="admin_template\pub\_layout\pages.pug" />
+    <Content Include="admin_template\pub\_partials\banner.pug" />
+    <Content Include="admin_template\pub\_partials\breadcrumb.pug" />
+    <Content Include="admin_template\pub\_partials\footer.pug" />
+    <Content Include="admin_template\pub\_partials\head.pug" />
+    <Content Include="admin_template\pub\_partials\header.pug" />
+    <Content Include="admin_template\pub\_partials\scripts.pug" />
+    <Content Include="admin_template\pub\_partials\sidebar.pug" />
+    <Content Include="admin_template\pub\base\breadcrumb.pug" />
+    <Content Include="admin_template\pub\base\cards.pug" />
+    <Content Include="admin_template\pub\base\carousel.pug" />
+    <Content Include="admin_template\pub\base\collapse.pug" />
+    <Content Include="admin_template\pub\base\forms.pug" />
+    <Content Include="admin_template\pub\base\jumbotron.pug" />
+    <Content Include="admin_template\pub\base\list-group.pug" />
+    <Content Include="admin_template\pub\base\navs.pug" />
+    <Content Include="admin_template\pub\base\pagination.pug" />
+    <Content Include="admin_template\pub\base\popovers.pug" />
+    <Content Include="admin_template\pub\base\progress.pug" />
+    <Content Include="admin_template\pub\base\scrollspy.pug" />
+    <Content Include="admin_template\pub\base\switches.pug" />
+    <Content Include="admin_template\pub\base\tables.pug" />
+    <Content Include="admin_template\pub\base\tabs.pug" />
+    <Content Include="admin_template\pub\base\tooltips.pug" />
+    <Content Include="admin_template\pub\buttons\brand-buttons.pug" />
+    <Content Include="admin_template\pub\buttons\button-group.pug" />
+    <Content Include="admin_template\pub\buttons\buttons.pug" />
+    <Content Include="admin_template\pub\buttons\dropdowns.pug" />
+    <Content Include="admin_template\pub\icons\coreui-icons-brand.pug" />
+    <Content Include="admin_template\pub\icons\coreui-icons-flag.pug" />
+    <Content Include="admin_template\pub\icons\coreui-icons-free.pug" />
+    <Content Include="admin_template\pub\notifications\alerts.pug" />
+    <Content Include="admin_template\pub\notifications\badge.pug" />
+    <Content Include="admin_template\pub\notifications\modals.pug" />
     <None Include="Modules\tsconfig.json.back" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -132,6 +198,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
