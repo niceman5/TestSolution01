@@ -83,7 +83,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMailSend", "ConsoleM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebBootstrap", "WebBootstrap\WebBootstrap.csproj", "{BC7B2EBC-54F6-486A-B347-B3E2BEBFFA2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFluentValidation", "ConsoleFluentValidation\ConsoleFluentValidation.csproj", "{93688E80-0328-4530-90B8-12933C7EA5AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleFluentValidation", "ConsoleFluentValidation\ConsoleFluentValidation.csproj", "{93688E80-0328-4530-90B8-12933C7EA5AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAdminTemplate", "WebAdminTemplate\WebAdminTemplate.csproj", "{EF0462F4-0178-4988-8E50-F18F5AD8928A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{93688E80-0328-4530-90B8-12933C7EA5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93688E80-0328-4530-90B8-12933C7EA5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93688E80-0328-4530-90B8-12933C7EA5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0462F4-0178-4988-8E50-F18F5AD8928A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0462F4-0178-4988-8E50-F18F5AD8928A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0462F4-0178-4988-8E50-F18F5AD8928A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0462F4-0178-4988-8E50-F18F5AD8928A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
