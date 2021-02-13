@@ -63,10 +63,13 @@ namespace _01.ConsoleTest
             //Console.WriteLine(q.Sum());
 
 
-            object[] ar = null;
+            //object[] ar = null;
 
-            var q = ar.OfType<int>();
-            Console.WriteLine(q.Sum());
+            //var q = ar.OfType<int>();
+            //Console.WriteLine(q.Sum());
+
+            PerfCheck p1 = new PerfCheck();
+            p1.Run();
         }
     }
 }
