@@ -24,6 +24,9 @@ namespace InAndOut
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
+            //메모리캐시 사용을 위한 준비 
+            services.AddMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
