@@ -7,10 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Users\**" />
+    <Content Remove="Views\Users\**" />
+    <EmbeddedResource Remove="Views\Users\**" />
+    <None Remove="Views\Users\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1" />
@@ -21,7 +29,6 @@
     <Folder Include="04.DataBase\01.StoredProcedure\01.USERS\" />
     <Folder Include="04.DataBase\01.StoredProcedure\02.BOARDS\" />
     <Folder Include="04.DataBase\02.Views\" />
-    <Folder Include="Views\Users\" />
   </ItemGroup>
 
 </Project>
