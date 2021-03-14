@@ -47,8 +47,7 @@ namespace WebApp01
                 options.Cookie.HttpOnly = true; 
                 // Make the session cookie essential 
                 options.Cookie.IsEssential = true; 
-            });
-
+            });           
 
             /*
             Transient  : Transient 수명 서비스(AddTransient)는 서비스 컨테이너에서 요청할 때마다 만들어집니다. 이 수명은 간단한 상태 비저장 서비스에 가장 적합합니다.
@@ -73,6 +72,9 @@ namespace WebApp01
             // 사용하려면 AddHttpClient(IServiceCollection) 을 호출하여 Startup.cs 파일에 등록 할 수 있습니다  .
             services.AddHttpClient("PublicHolidaysApi", c => c.BaseAddress = new Uri("https://date.nager.at"));
 
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(15);
+            });
 
         }
 
@@ -92,6 +94,8 @@ namespace WebApp01
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

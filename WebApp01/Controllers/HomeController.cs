@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApp01.Models;
 using WebApp01.Models.Holiday;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace WebApp01.Controllers
 {
@@ -31,6 +33,10 @@ namespace WebApp01.Controllers
 
         public IActionResult Index()
         {
+            var student = new Student() { Id = 10, Name = "김길동", Email = "aaa@aaaa.com" };
+            
+            //세션에 값을 넣는다. 인스턴스를 json으로 
+            HttpContext.Session.SetString("StudentSession", JsonConvert.SerializeObject(student));
             return View();
         }
 
