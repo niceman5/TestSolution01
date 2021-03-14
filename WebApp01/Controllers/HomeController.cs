@@ -6,16 +6,27 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApp01.Models;
+using WebApp01.Models.Holiday;
 
 namespace WebApp01.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IHolidaysApiService _holidaysApiService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IHolidaysApiService holidaysApiService)
         {
             _logger = logger;
+            _holidaysApiService = holidaysApiService;
+        }
+
+
+        public async Task<IActionResult> Holiday(string countryCode = "kr", int year = 2021)
+        {
+            List<HolidayModel> holidays = new List<HolidayModel>();
+            holidays = await _holidaysApiService.GetHolidays(countryCode, year);
+            return View(holidays);
         }
 
         public IActionResult Index()
