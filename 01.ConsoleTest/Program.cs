@@ -68,7 +68,10 @@ namespace _01.ConsoleTest
             //var q = ar.OfType<int>();
             //Console.WriteLine(q.Sum());
 
-            PerfCheck p1 = new PerfCheck();
+            //PerfCheck p1 = new PerfCheck();
+            //p1.Run();
+
+            searchHan p1 = new searchHan();
             p1.Run();
         }
     }
