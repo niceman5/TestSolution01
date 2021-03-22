@@ -54,8 +54,10 @@ namespace _00.AlgorithmTest
             //q.Answer();
 
             //Quize2_프린터 q = new Quize2_프린터();
-            Quize2_스킬트리 q = new Quize2_스킬트리();
-            q.Answer();
+            //Quize2_스킬트리 q = new Quize2_스킬트리();
+            //q.Answer();
+            Quize2_가장큰수 q = new Quize2_가장큰수();
+            q.Run();
         }
     }
 }
