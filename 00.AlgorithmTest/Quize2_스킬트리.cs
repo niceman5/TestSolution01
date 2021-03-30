@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 /*
@@ -37,58 +38,68 @@ namespace _00.AlgorithmTest
         public int solution(string skill, string[] skill_trees)
         {
             int answer = skill_trees.Length;
-            string strTmp = "";            
+            string strTmp = "";
+            string str = "";
             
             /*
             문자열의 위치값을 가져와서 순서가 바뀌면 오류 
             CBD -> 123으로 변경 문자열의 위치값으로
-            BACDE 2A13E....영문제거하면 213 -> 순서가 틀림 오류
+            BACDE 2A13E....영문제거하면 213 -> 순서가 틀림 오류            
             */
             foreach (var item in skill_trees)
             {
-                // Console.WriteLine(item);
-
-                int iPos = -1;
+                str = "";
+                Console.WriteLine(item);
+                //해당문자열외에는 다 제거한다.
                 for (int i = 0; i < skill.Length; i++)
                 {
                     strTmp = skill.Substring(i, 1);
+                    str += string.Concat(item.Where(x => x.Equals(strTmp) ));
+                }
 
-                    //첫번째 스킬이 없으면 무조건 오류임
-                    if (item.IndexOf(strTmp) < 0)
-                    {
-                        if (i == 0)
-                        {
-                            answer--;
-                            break;
-                        }
-                        continue;
-                    }                       
+                Console.WriteLine(str);
 
-                    // 위치값이 없으면 값을 넣는다.
-                    if (iPos < 0)
-                    {
-                        iPos = item.IndexOf(strTmp);
-                    }                        
-                    else
-                    {
-                        if (iPos > item.IndexOf(strTmp))
-                        {                            
-                            answer--;
-                            break;
-                        }
-                        iPos = item.IndexOf(strTmp);
-                    }
-                }                
-            }
+                    //int iPos = -1;
+                    //for (int i = 0; i < skill.Length; i++)
+                    //{
+                    //    strTmp = skill.Substring(i, 1);
+
+                    //    //첫번째 스킬이 없으면 무조건 오류임
+                    //    if (item.IndexOf(strTmp) < 0)
+                    //    {
+                    //        if (i == 0)
+                    //        {
+                    //            answer--;
+                    //            break;
+                    //        }
+                    //        continue;
+                    //    }                       
+
+                    //    // 위치값이 없으면 값을 넣는다.
+                    //    if (iPos < 0)
+                    //    {
+                    //        iPos = item.IndexOf(strTmp);
+                    //    }                        
+                    //    else
+                    //    {
+                    //        if (iPos > item.IndexOf(strTmp))
+                    //        {                            
+                    //            answer--;
+                    //            break;
+                    //        }
+                    //        iPos = item.IndexOf(strTmp);
+                    //    }
+                    //}                
+                }
 
             return answer;
         }
 
         public void Answer()
         {
-            int res = solution("CBD", new string[] { "BACDE", "CBADF", "AECB", "BDA" });
+            //int res = solution("CBD", new string[] { "BACDE", "CBADF", "AECB", "BDA" });
             //int res = solution("CBD", new string[] { "BDA" });
-            //int res = solution("CBD", new string[] { "AECB" });
+            int res = solution("CBD", new string[] { "AECB" });
 
             Console.Write(res);
         }
