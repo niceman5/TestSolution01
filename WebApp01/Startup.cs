@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -101,6 +102,9 @@ namespace WebApp01
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseCookieAuthentication( new CookieAuthenticationOptions()
+                );
 
             //¼Å¼Ç°ü·Ã  
             app.UseSession();           
