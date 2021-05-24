@@ -24,15 +24,20 @@ namespace XMLSerialize
         {
             // class내용을 xml파일에 저장하고 읽어서 표시한다.
             Customer c = new Customer { seq = 1, CompanyName = "가나다라", Name = "홍길동", Sex = true };
+            string write_path = @"C:\00.Dev\temp\Emp.xml";      //집 pc
+            string read_path = @"C:\00.Dev\temp\Emp.xml";      //집 pc
+            // string write_path = @"D:\00.Dev\dotnetProject\TestSolution01\XMLSerialize\Emp.xml";   //회사 pc
+            // string read_path = @"D:\00.Dev\dotnetProject\TestSolution01\XMLSerialize\Emp.xml";   //회사 pc
 
-            using (StreamWriter sw = new StreamWriter(@"D:\00.Dev\dotnetProject\TestSolution01\XMLSerialize\Emp.xml"))
+
+            using (StreamWriter sw = new StreamWriter(write_path))
             {
                 XmlSerializer xs = new XmlSerializer(typeof(Customer));
                 xs.Serialize(sw, c);
             }
 
             // xml파일을 읽어서 class에 매칭
-            using (StreamReader sr=new StreamReader(@"D:\00.Dev\dotnetProject\TestSolution01\XMLSerialize\Emp.xml"))
+            using (StreamReader sr=new StreamReader(read_path))
             {
                 XmlSerializer xs = new XmlSerializer(typeof(Customer));
                 Customer c1 = (Customer)xs.Deserialize(sr);
