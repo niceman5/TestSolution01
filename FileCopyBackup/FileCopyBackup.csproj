@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="FileCopyBaackup.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FileCopyBaackup.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FileCopyBaackup.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FileCopyBaackup.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
